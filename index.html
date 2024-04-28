@@ -3,13 +3,115 @@
     <head>  
     </head>
     <body>
-<!-- top menu bar -->
-        <div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#research">Research</a>
-  <a href="#publications">Publications</a>
-  <a href="#cv">CV</a>
-</div>
-        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <div id="container">
+            <div id="headerArea">
+                
+                
+            <nav id="navbar"><ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#CV">Link</a></li>
+             
+              </ul></nav></div>
+
+            <div id="flex">
+                <aside id="leftSidebar">
+                    <h2>Updates</h2>
+                    <div class="box">
+                        <p>I have recently updated this tool as of August 2022!</p>
+                        <ul style="padding-left:10px;">
+                            <li>Rewrote the JS to generate cleaner code</li>
+                            <li>Rewrote the CSS in a way that hopefully makes much more sense to edit</li>
+                            <li>Added a couple of new features!</li>
+                            <li>Old version is still available <a href="old.html" target="_blank">here</a></li>
+                        </ul>
+                    </div>
+                    <h2>Hi there!</h2>
+                    <h3>Other Tools</h3>
+                    <ul>
+                        <li><a href="https://sadgrlonline.github.io/html-cheatsheet/" target="_blank">HTML Cheatsheet</a>
+                        </li><li><a href="/sadgrl/webmastery/webmaster-links.html" target="_blank">Webmaster Links</a></li>
+                        <li><a href="/sadgrl/webmastery/downloads/tiledbgs.html" target="_blank">Tiled BGs</a></li>
+                        <li><a href="/sadgrl/webmastery/downloads/fonts.html" target="_blank">Fonts</a></li>
+                        <li><a href="/sadgrl/projects/ideas/" target="_blank">Site Ideas</a></li>
+                    </ul>
+                </aside>
+                <main>
+
+
+
+                </main>
+                
+            </div>
+            <footer id="footer">CC0 Public Domain, 2022</footer>
+        </div>
+        <!-- THIS IS THE CSS !-->
+        <style>
+            /* user styles */
+
+            /* styles are what change the color and sizes of stuff on your site. */
+
+            /* these are variables that are being used in the code
+    these tended to confuse some people, so I only kept 
+    the images as variables */
+
+            :root {
+                --header-image: url('https://sadhost.neocities.org/images/layouts/wp.jpeg');
+                --body-bg-image: url('https://sadhost.neocities.org/images/tiles/purplesky.gif');
+
+                /* colors */
+                --content: #43256E;
+            }
+
+            /* if you have the URL of a font, you can set it below */
+            /* feel free to delete this if it's not your vibe */
+
+            /* this seems like a lot for just one font and I would have to agree 
+    but I wanted to include an example of how to include a custom font.
+    If you download a font file you can upload it onto your Neocities
+    and then link it! Many fonts have separate files for each style
+    (bold, italic, etc. T_T) which is why there are so many!
+    
+    */
+
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+            }
+
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+                font-weight: bold;
+            }
+
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+                font-style: italic;
+            }
+
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+                font-style: italic;
+                font-weight: bold;
+            }
+
+            body {
+                font-family: 'Nunito', sans-serif;
+                margin: 0;
+                background-color: #08031A;
+                /* you can delete the line below if you'd prefer to not use an image */
+                background-size: 65px;
+                color: #fceaff;
+                background-image: var(--body-bg-image);
+            }
+
+            * {
+                box-sizing: border-box;
+            }
     </body>
 </html>
